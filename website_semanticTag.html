@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmonas Jwellery</title>
+    <style>
+        /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: pink; /* clean white background */
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+    top: 0; /* 👈 required */
+  z-index: 1000; /* 👈 ensures it stays on top of other content */
+  
+}
+
+header h1 {
+  font-size: 30px;
+  color: brown;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+
+.navbar ul li a {
+  text-decoration: none;
+  color: brown;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+  
+}
+
+.navbar ul li a:hover {
+  color: white; /* gold tone for elegance */
+  border-bottom: 2px solid black;
+  padding-bottom: 4px;
+}
+.product {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px;
+  background-color: pink; /* soft off-white for luxury feel */
+}
+
+.product article {
+  background-color: #fff;
+  border: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product article img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.product article h3 {
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: brown;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+}
+
+.product article h3::after {
+  content: '';
+  display: block;
+  margin: 6px auto 0;
+  width: 40%;
+  height: 2px;
+  background-color: brown;
+  opacity: 0.6;
+}
+
+.product article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+img {
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+  width: 100%;
+}
+.customer-review img{
+    background-size: cover;
+  background-position: center;
+  height: 550px;
+  width: 100%;
+}
+
+.hero-banner h2 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: brown;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+.founder p {
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 100;
+  color: brown;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  background-color: #fff;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 60px;
+}
+
+.testimonial-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.testimonial-text {
+  max-width: 600px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 16px;
+  color: brown;
+  line-height: 1.6;
+}
+.testimonial h4 {
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.testimonial-text strong {
+  font-weight: bold;
+}
+
+
+.founder h3 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: brown;
+  text-align: center;
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+footer {
+  background-color: white; /* elegant dark base */
+  color: brown;          /* soft white text */
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>Palmonas Jwellery</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Best Seller</a></li>
+            <li><a href="#">Rakhi Special</a></li>
+            <li><a href="#">Shraddha's Favourite</a></li>
+            <li><a href="#">Gifting</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <section class="hero-banner">
+             <h2>EVERYDAY DEMIFINE JEWELLERY</h2>
+             <img src="https://www.palmonas.com/cdn/shop/files/Palmona_link_cover_3.jpg?v=1715082930" alt="palmonas">
+        </section>
+
+        <section class="product">
+          <article>
+          <img src="https://www.palmonas.com/cdn/shop/files/HeartsAllOverBracelet-3.jpg?v=1698495450" alt="Gold Necklace">
+          <h3>Rakhi gifts</h3>
+          </article>
+          <article>
+          <img src="https://i.pinimg.com/736x/e4/f8/dc/e4f8dc00a787cb53cfdb988a997e49ce.jpg" alt="Diamond Earrings">
+          <h3>Necklaces</h3>
+          </article>
+          <article>
+          <img src="https://www.palmonas.com/cdn/shop/files/RG204_1.jpg?v=1725363096" alt="Emerald Ring">
+          <h3>Rings</h3>
+          </article>
+          <article>
+          <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/earring/x/0/m/na-er275-palmonas-original-imah2w4wm4yky4gd.jpeg?q=70" alt="Emerald Ring">
+          <h3>Earrings</h3>
+          </article>
+          <article>
+          <img src="https://www.palmonas.com/cdn/shop/files/BR088W.jpg?v=1693470924&width=600" alt="Emerald Ring">
+          <h3>Bracelets</h3>
+          </article>
+        </section>
+        <section class="founder">
+             <p>At Palmonas, we create jewellery that’s made to be worn — every day and on the days that matter most. It’s premium in quality, thoughtful in design, and priced so it feels right. We don’t believe in saving the good stuff for later. Our pieces are made to move with you, not sit in a box. Because with Palmonas, the sparkle is always yours to keep.</p>
+             <h3>FROM SHRADDHA, FOR YOU</h3>
+        </section>
+        <section class="testimonial">
+        <div class="testimonial-image">
+        <img src="https://assets.entrepreneur.com/content/3x2/2000/1709702510-Untitleddesign4.png" alt="Shraddha Kapoor">
+        </div>
+        <div class="testimonial-text">
+            <h4>Shraddha Kapoor</h4>
+        <p>
+      "A lot of us find real gold too expensive — and we don’t want our jewellery locked away.
+      At the same time, imitation jewellery fades, breaks, and doesn’t last. <br><br>
+      So at Palmonas, we’re building something in the middle — a new category called <strong>Demifine</strong>: 
+      18k thick gold plating on premium metals, so everyone can enjoy jewellery that’s trendy, lasting, and high on quality."
+       hero-banner </p>
+        </div>
+        </section>
+        <section class="customer-review">
+            <img src="  https://www.palmonas.com/cdn/shop/files/Customer_Love_-_Web-2_2c111a8a-3a34-4b55-9e47-ca2263005773.webp?v=1704221201&width=1500
+" alt="customer review">
+        </section>
+    
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 DEMIFINE JEWELLERY. All rights reserved.</p>
+  </footer>
+    </main>
+</body>
+</html>
